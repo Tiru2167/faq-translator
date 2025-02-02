@@ -26,7 +26,7 @@ const getAllFAQs = async (req, res) => {
             faqs = await FAQ.find();
             // Cache the data
             await cache.set(cacheKey, JSON.stringify(faqs), {
-                EX: 3600, // Expiration time in seconds
+                EX: 60, // Expiration time in seconds
             });
         }
 
