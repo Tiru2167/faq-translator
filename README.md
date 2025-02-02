@@ -49,7 +49,7 @@ Response:
 ]
 
 ## Translate an FAQ
-Endpoint: GET /translate/:faqId/:lang
+Endpoint: GET /translate/:faqId?lang='hi'
 
 Parameters:
 
